@@ -1,4 +1,4 @@
-import BiomoApp from './BiomoApp';
+import BiomoApp from './BiomoApp4';
 import './App.css';
 
 function App() {
