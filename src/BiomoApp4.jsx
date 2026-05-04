@@ -341,7 +341,6 @@ const RoomHistoryModal = ({ roomId, onClose }) => {
   const [metric, setMetric] = useState("co2");
   const r=ROOMS[roomId], h=ROOM_HISTORY[roomId];
   if (!r||!h) return null;
-  const sc=STATUS[r.status];
   const mCfg = {
     co2:   { label:"CO₂",     unit:"ppm", color:r.co2>=1000?C.red:r.co2>=700?C.amber:C.green, vals:h.co2   },
     occ:   { label:"Status",  unit:"%",   color:C.blue,                                         vals:h.occ   },
